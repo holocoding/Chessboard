@@ -1,0 +1,53 @@
+body {margin-top: 0}
+		input {
+			padding:1px 1em 1px 1em;
+			border-width: 1px;
+			border-color: rgba(0, 0, 0, 0.5);
+			border-radius: 3%;
+			height: 2.5em;
+			border-style: solid;
+		}
+		.board {
+			display: block;
+			border: solid 2px;
+			height: 800px;
+			width: 800px;
+		}
+
+		.row {
+			display: flex;
+			height: 100px;
+			width: 800px;
+		}
+
+		.figures {
+			position: absolute;
+			width: 100px;
+			z-index: 10;
+		}
+
+		.figures:hover {
+			width: 98px;
+		}
+
+		.figures:active {
+			width: 100px;
+			border: none;
+		}
+
+		.game {
+			display: flex;
+		}
+
+		.chat {
+			margin-left: 50px;
+			border: double darkred 4px;
+			width: 400px;
+			height: 800px;
+		}
+
+		@keyframes fadeIn {
+			from {opacity: 0;}
+			50% {opacity: .5;}
+			to {opacity: 1;}
+		}

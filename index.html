@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Schach</title>
+	<script src="js/main.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body style="display:none;">
+	<p id="p" style="margin:0px;text-align:right;height:20px;"></p>
+	<!--Zeigt die Koordinaten oben rechts an-->
+	<h1 style="margin:0px 0px 10px">Interaktives Schachbrett</h1>
+	<hr style="margin:0px 0px 20px">
+	<label for"I-Box">Zugeingabe:</label>
+	<input id="input_move" type="text" name="I-Box" placeholder="Bitte geben Sie einen Zug ein" autofocus>
+	<div class="game" style="margin-top:5px">
+		<div id="board" class="board"></div>
+		<div style="height:800px">
+			<p style="height:100px;margin:0"><br><br>8</p>
+			<p style="height:100px;margin:0"><br><br>7</p>
+			<p style="height:100px;margin:0"><br><br>6</p>
+			<p style="height:100px;margin:0"><br><br>5</p>
+			<p style="height:100px;margin:0"><br><br>4</p>
+			<p style="height:100px;margin:0"><br><br>3</p>
+			<p style="height:100px;margin:0"><br><br>2</p>
+			<p style="height:100px;margin:0"><br><br>1</p>
+		</div>
+		<div class="chat" id="chatbox">
+			<div id="chat"
+				style="height:778px;width:398px;border:none;padding:0px;margin-left:1px;margin-right:1px;margin-bottom:0px;margin-top:0px;overflow-y:scroll;overflow-wrap: break-word;">
+			</div>
+			<input id="chat_input" maxlength="200"
+				style="height:20px;width:398px;border:none;padding:0px;margin-left:1px;margin-right:1px;margin-bottom:1px"
+				placeholder="Bitte geben Sie erst einen Namen an">
+		</div>
+	</div>
+	<div style="width:800px;display:flex">
+		<p style="width:100px;margin:0;text-align: center;">a</p>
+		<p style="width:100px;margin:0;text-align: center;">b</p>
+		<p style="width:100px;margin:0;text-align: center;">c</p>
+		<p style="width:100px;margin:0;text-align: center;">d</p>
+		<p style="width:100px;margin:0;text-align: center;">e</p>
+		<p style="width:100px;margin:0;text-align: center;">f</p>
+		<p style="width:100px;margin:0;text-align: center;">g</p>
+		<p style="width:100px;margin:0;text-align: center;">h</p>
+	</div>
+	<div>
+		<p id="Statics"><b>Spielstatistiken:</b><br><i>Spieler: <input id="NameInput" style="width: 200px" maxlength="20"
+					placeholder="Name">
+				vs. <input value="GNU-Chess-Computer" readOnly=True><br>Points: 0:0<br>Round: /</i></p>
+		Klicken Sie <a href="https://localhost:8000">hier</a> um ein neues Spiel zu starten.
+	</div>
+</body>
+
+</html>
